@@ -1,0 +1,93 @@
+.card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 30px;    
+}
+
+
+.card h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+.card-items {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+    .card-items {
+        flex-direction: column;
+    }
+}
+
+
+.card-item {
+    width: calc(33.333% - 60px);
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card-item:hover {
+    transform: scale(1.05);
+}
+
+.card-item img.pimg {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.lines {
+    margin-top: 15px;
+}
+
+.nameA {
+    display: block;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.priceperlead {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.offer {
+    color: #dc3545;
+    font-weight: bold;
+    background-color: #ffecec;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.line3 {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background: linear-gradient(to right, #007bff, #0056b3);
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.25), 0 6px 6px rgba(0, 123, 255, 0.22);
+}
+
+.line3:hover {
+    background-color: #0056b3;
+}
